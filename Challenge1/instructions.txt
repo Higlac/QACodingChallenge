@@ -1,0 +1,26 @@
+Requirements to run the test:
+    python3
+    pytest
+
+Instructions:
+
+Adding a URL to test:
+    1. Open URLList.txt in a text editor
+    2. URLs to test may be added or removed from this file, with one URL per line.
+
+Running the test:
+    1. Open a command prompt or linux terminal
+    2. Navigate to the folder containing this instructions file (../QACodingChallenge/Challenge1)
+    3. Run 'pytest'. Pytest will automatically detect test files in the current folder and run them.
+    4. If python and pytest are installed correctly, and the website specified in URLList.txt is up, then the output should look similar to this:
+
+    >   ==================== test session starts ====================
+    >   platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-1.0.0
+    >   rootdir: /mnt/c/Users/Zach/git/QACodingChallenge/Challenge1
+    >   collected 1 item
+    >
+    >   test_URLs.py .                                                                                                                                                                                    [100%]
+    >
+    >   ==================== 1 passed in 0.18s ====================
+
+    5. If there are any URLs in URLList.txt that are not available, then they will be printed in stdout with the HTTP response code before the test fails.
